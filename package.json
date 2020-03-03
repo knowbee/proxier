@@ -1,0 +1,15 @@
+{
+  "name": "proxier",
+  "version": "0.0.1",
+  "description": "",
+  "main": "index.js",
+  "bin": {
+    "proxier": "index.js"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
+  "license": "MIT"
+}
