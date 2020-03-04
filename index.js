@@ -70,7 +70,7 @@ function helper() {
     proxier --set npm yarn git http://host:port
     `
     )
-    .version("0.0.1")
+    .version("1.0.0")
     .option("--set, set", "required option to set proxy configurations")
     .option("--npm, npm", "set npm proxy configurations")
     .option("--yarn, yarn", "set yarn proxy configurations")
