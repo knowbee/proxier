@@ -1,6 +1,6 @@
 {
   "name": "proxier",
-  "version": "0.0.1",
+  "version": "1.0.0",
   "description": "CLI tool that sets proxy configuration for npm, yarn and git",
   "main": "index.js",
   "bin": {
