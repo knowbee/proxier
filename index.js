@@ -64,7 +64,12 @@ function helper() {
   console.log();
   proxier
     .name("proxier")
-    .description("set/remove proxy configurations for npm, yarn and git")
+    .description(
+      `
+    set/remove proxy configurations for npm, yarn and git
+    proxier --set npm yarn git http://host:port
+    `
+    )
     .version("0.0.1")
     .option("--set, set", "required option to set proxy configurations")
     .option("--npm, npm", "set npm proxy configurations")
