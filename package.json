@@ -1,21 +1,47 @@
 {
   "name": "proxier",
   "version": "0.0.1",
-  "description": "",
+  "description": "CLI tool that sets proxy configuration for npm, yarn and git",
   "main": "index.js",
   "bin": {
     "proxier": "index.js"
   },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "lint": "eslint .",
+    "coverage": "nyc report --reporter=text-lcov | coveralls",
+    "test": "nyc mocha ./test/* --exit",
+    "fix-lint": "eslint . --fix"
   },
-  "keywords": [],
   "author": "Igwaneza Bruce <knowbeeinc@gmail.com>",
   "license": "MIT",
   "dependencies": {
     "chalk": "^3.0.0",
     "clear": "^0.1.0",
+    "commander": "^4.1.1",
     "figlet": "^1.3.0",
     "ora": "^4.0.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/knowbee/proxier.git"
+  },
+  "keywords": [
+    "proxy",
+    "proxify",
+    "proxier",
+    "git proxy",
+    "node proxy",
+    "npm proxy",
+    "yarn proxy"
+  ],
+  "bugs": {
+    "url": "https://github.com/knowbee/proxier/issues"
+  },
+  "homepage": "https://github.com/knowbee/proxier#readme",
+  "devDependencies": {
+    "chai": "^4.2.0",
+    "coveralls": "^3.0.9",
+    "mocha": "^7.1.0",
+    "nyc": "^15.0.0"
   }
 }
